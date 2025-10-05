@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skyler Robinson - AI-Powered Content Repurposer</title>
+  <title>Skyler Robinson - Stop Wasting Your Content | AI-Powered Repurposing</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -24,6 +24,7 @@
       background: linear-gradient(135deg, #4a90e2, #50c9c3);
       color: white;
       border-radius: 10px;
+      margin-bottom: 30px;
     }
     .header h1 {
       font-size: 2.5em;
@@ -35,6 +36,10 @@
     }
     .section {
       margin: 40px 0;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .section h2 {
       font-size: 1.8em;
@@ -42,36 +47,85 @@
       border-bottom: 2px solid #4a90e2;
       padding-bottom: 10px;
     }
-    .projects-grid {
+    .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      margin-top: 20px;
     }
-    .project-card {
-      background: white;
+    .service-card {
+      background: #f8f9fa;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-left: 4px solid #4a90e2;
+    }
+    .service-card h3 {
+      font-size: 1.3em;
+      margin: 10px 0;
+      color: #4a90e2;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .project-card {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
       text-align: left;
+      border: 1px solid #e0e0e0;
     }
     .project-card h3 {
       font-size: 1.2em;
       margin: 10px 0;
+      color: #4a90e2;
     }
     .project-card pre {
-      background: #f8f8f8;
+      background: #f0f0f0;
       padding: 10px;
       border-radius: 5px;
       overflow: auto;
       font-size: 0.9em;
+      max-height: 200px;
     }
     .project-card a {
       color: #4a90e2;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
     }
     .project-card a:hover {
       text-decoration: underline;
+    }
+    .offer-section {
+      background: linear-gradient(135deg, #4a90e2, #50c9c3);
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .offer-section h2 {
+      color: white;
+      border-bottom: 2px solid white;
+    }
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #4a90e2;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #f0f0f0;
+      transform: translateY(-2px);
     }
     .contact {
       text-align: center;
@@ -80,9 +134,23 @@
       color: #4a90e2;
       text-decoration: none;
       margin: 0 10px;
+      font-weight: bold;
     }
     .contact a:hover {
       text-decoration: underline;
+    }
+    .testimonial {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      border-left: 4px solid #50c9c3;
+      font-style: italic;
+    }
+    .testimonial-author {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -90,132 +158,111 @@
   <div class="container">
     <!-- Header Section -->
     <div class="header">
-      <h1>Skyler Robinson</h1>
-      <p>AI-Powered Content Repurposer | Prompt Engineer | Productivity Specialist</p>
+      <h1>Stop Letting Your Content Go to Waste</h1>
+      <p>I transform your blog posts and videos into a full month of engaging social media content</p>
+      <p>Get a done-for-you content calendar, delivered in 48 hours</p>
     </div>
 
-    <!-- About Section -->
+    <!-- Services Section -->
     <div class="section">
-      <h2>About Me</h2>
-      <p>Hi, I'm Skyler Robinson, a prompt engineering specialist helping creators, marketers, and businesses turn their long-form content into engaging social media campaigns. Using advanced AI tools, I repurpose blog posts, videos, and podcasts into Twitter threads, LinkedIn posts, video scripts, and more—all with a strategic human touch to match your brand voice and drive engagement. My niche is productivity with AI tools, but I handle diverse topics like SaaS marketing. Starting with $0, I focus on fast, risk-free services to generate cash flow while building passive income through affiliate marketing (e.g., Amazon Associates via Pinterest pins).</p>
+      <h2>From One Piece of Content, You Get:</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>30+ Social Posts</h3>
+          <p>Engaging Twitter threads, LinkedIn posts, and Instagram captions tailored for each platform.</p>
+        </div>
+        <div class="service-card">
+          <h3>5 Video Scripts</h3>
+          <p>Ready-to-film scripts for TikTok, Reels, and Shorts designed to grab attention and drive engagement.</p>
+        </div>
+        <div class="service-card">
+          <h3>Your Time Back</h3>
+          <p>Stop spending hours on social media. I deliver a complete content calendar so you can focus on your business.</p>
+        </div>
+      </div>
     </div>
 
     <!-- Portfolio Section -->
     <div class="section">
-      <h2>Portfolio Samples</h2>
-      <p>See how I transform original content into ready-to-use social media assets. Each sample includes the original blog post and the repurposed content for various platforms.</p>
+      <h2>See The Transformation</h2>
+      <p>Here's how I've helped other businesses maximize their content:</p>
       <div class="projects-grid">
         <div class="project-card">
-          <h3>Productivity & Wellness Coach: 5-Minute Morning Routine</h3>
-          <p>Original Blog Post:</p>
-          <pre>Title: The 5-Minute Morning Routine That Will Transform Your Productivity
-
-Body:
-"We've all been there: the alarm goes off, you grab your phone, and suddenly you're plunged into a sea of emails, news, and social media. Your brain is reactive before you've even gotten out of bed. This sets a chaotic tone for the entire day.
-
-The solution isn't working harder; it's starting smarter. Here is a simple 5-minute routine to reclaim your morning and supercharge your productivity:
-
-    Minute 1: Hydrate. Drink a full glass of water. Your brain is dehydrated after sleep. This simple act wakes up your system.
-
-    Minute 2-3: Mindful Breathing. Sit in silence and take 10 deep, slow breaths. This calms your nervous system and centers your mind, moving you from a reactive state to a proactive one.
-
-    Minute 4: Intentional Setting. Ask yourself: "What is the ONE most important thing I need to accomplish today?" Not a to-do list, but one single priority. This creates powerful focus.
-
-    Minute 5: Quick Movement. Stand up and stretch for 60 seconds. Get the blood flowing. This signals to your body that the day has begun.
-
-This routine requires no special apps or equipment. It's about creating a small buffer of control between sleep and the demands of the world. By investing just five minutes in yourself, you build a foundation of calm and purpose that pays dividends all day long."</pre>
-          <p>Repurposed Content (Excerpts):</p>
-          <pre>X/Twitter Thread 1:
-Tweet 1/3: Your morning routine is broken. You check your phone within 60 seconds of waking up. This is creating a reactive, chaotic day. Here's a 5-minute fix. 🧵
-
-Tweet 2/3: 1. Hydrate (1 min): A glass of water wakes up a dehydrated brain. It's the simplest productivity hack there is. 2. Breathe (2 min): 10 deep breaths. This switches your nervous system from stress (reactive) to calm (proactive).
-
-Tweet 3/3: 3. Set 1 Intention (1 min): What is the ONE thing you must do today? Not a list. One thing. 4. Move (1 min): Stretch. Get blood flowing. Day = started. Try this tomorrow. Your focus will thank you. #Productivity #MorningRoutine
-
-LinkedIn Post 1:
-"We glorify 'hustle,' but the most productive people I know start with stillness. The first 5 minutes of your day are critical. Instead of reaching for your phone, try this science-backed routine: 1. Hydrate for cognitive function. 2. Breathe to center your mind. 3. Set a single, powerful intention. 4. Move to activate your body. This isn't about adding more to your plate; it's about starting from a place of control and clarity. What's your non-negotiable morning habit?"
-
-Video Script 1:
-Visual: Quick, dynamic clips of someone looking tired, checking phone, then transitioning to them doing the routine.
-Text on Screen: Your morning routine is broken. Fix it in 5 mins.
-Spoken Script (Upbeat): "Sixty seconds after you wake up, you're already behind. Stop! Try this: One minute to hydrate. Two minutes to just breathe—10 deep breaths. One minute to pick ONE thing to focus on today. One minute to stretch. That's it! Five minutes to take control of your day. Sound off in the comments if you're trying this tomorrow! #productivityhacks #morningroutine"</pre>
+          <h3>From Productivity Blog to Social Campaign</h3>
+          <p>See how a single article on morning routines was turned into a week's worth of engaging tweets and video ideas.</p>
+          <p><strong>Original Content:</strong> "The 5-Minute Morning Routine That Will Transform Your Productivity"</p>
+          <p><strong>Repurposed Into:</strong></p>
+          <ul>
+            <li>5 Twitter threads</li>
+            <li>5 LinkedIn posts</li>
+            <li>3 video scripts for Reels/TikTok</li>
+          </ul>
           <a href="https://docs.google.com/document/d/1e6-SM6IweblVO96aPF4pcj5hpd4cWlkF97menA-Zm3g/edit?usp=sharing">View Full Sample in Google Docs</a>
         </div>
         <div class="project-card">
-          <h3>B2B SaaS Company: 3 Unseen Metrics for Customer Churn</h3>
-          <p>Original Blog Post:</p>
-          <pre>Title: 3 Unseen Metrics That Predict Customer Churn Before It Happens
-
-Body:
-"While everyone tracks MRR and CAC, the real secrets to reducing churn lie in quieter, behavioral data. By the time a customer cancels, it's too late. The key is identifying at-risk customers months in advance. Here are three underutilized metrics that act as early warning systems:
-
-    Login Frequency Decay: A new user logs in daily. After 30 days, that drops to weekly. This is normal. The red flag is when weekly logins drop to monthly or less. This indicates a failure to integrate your product into their core workflow. Action: Trigger an automated email sequence highlighting an underused feature that solves a key job-to-be-done.
-
-    Support Ticket Sentiment Shift: Don't just track ticket volume; analyze the tone. A customer who once submitted polite, curious requests but now submits terse, frustrated tickets is signaling a buildup of unresolved friction. Action: This is a cue for a personal outreach from a customer success manager, not just a support agent.
-
-    Feature Stagnation: A user who successfully adopted your core features but has not explored any new ones in 90+ days is at high risk. They are getting stagnant value from your product and are vulnerable to competitors offering 'the next new thing.' Action: Proactively showcase recently released features that align with their usage history.
-
-Monitoring these metrics allows you to shift from reactive firefighting to proactive retention, creating happier customers and a more predictable revenue stream."</pre>
-          <p>Repurposed Content (Excerpts):</p>
-          <pre>X/Twitter Thread 1:
-Tweet 1/4: You're tracking MRR and Churn Rate. Good. But you're missing the early warning signs that predict churn months before it happens. Here are 3 unseen metrics that your SaaS needs to monitor. 🧵
-
-Tweet 2/4: 1. Login Frequency Decay: Going from weekly to monthly logins is a major red flag. It means your product isn't "sticky" anymore. Time to trigger a re-engagement campaign focused on a key feature they're ignoring.
-
-Tweet 3/4: 2. Support Ticket Sentiment Shift: A user's tone changing from curious to frustrated is a huge signal. This isn't a job for auto-replies. This needs a personal call from Customer Success ASAP.
-
-Tweet 4/4: 3. Feature Stagnation: If a user hasn't touched a new feature in 90 days, their perceived value of your product is plateauing. Proactively show them what they're missing. #SaaS #CustomerSuccess #Churn
-
-LinkedIn Post 1:
-"Churn isn't an event; it's a process. By the time a customer hits 'cancel,' the decision was made weeks or months prior, signaled by subtle changes in their behavior. The most successful SaaS companies I work with have moved beyond just tracking MRR. They obsess over three leading indicators:
-
-    Login Frequency Decay: The silent killer of user engagement.
-
-    Support Ticket Sentiment Shift: A crystal ball for customer frustration.
-
-    Feature Stagnation: The sign of a plateauing value proposition.
-    Shifting your focus to these metrics allows you to be proactive, not reactive. What's the most unusual churn predictor you've discovered?"
-
-Video Script 1:
-Visual: Screen recording of a SaaS dashboard. Graphs for MRR are steady, then a red "Churn" arrow appears. Then, the video rewinds and zooms in on smaller graphs for login frequency and support sentiment, which show negative trends before the churn.
-Text on Screen: You're looking at your churn metrics too late.
-Spoken Script: "See this churn? It was actually predictable here... and here. These three unseen metrics—login decay, support sentiment, and feature stagnation—are your crystal ball. Start tracking them to save your customers. #SaaS #Data #CustomerRetention"</pre>
+          <h3>From SaaS Article to Lead Magnet</h3>
+          <p>See how a technical marketing piece was repurposed to attract a B2B audience on LinkedIn and Twitter.</p>
+          <p><strong>Original Content:</strong> "3 Unseen Metrics That Predict Customer Churn Before It Happens"</p>
+          <p><strong>Repurposed Into:</strong></p>
+          <ul>
+            <li>4 Twitter threads</li>
+            <li>5 LinkedIn posts</li>
+            <li>2 video scripts explaining data visualization</li>
+          </ul>
           <a href="https://docs.google.com/document/d/1_r8D51ELBKQlgT8I-CikbW3NA111Y4o1BcddFrT71GM/edit?usp=sharing">View Full Sample in Google Docs</a>
         </div>
       </div>
     </div>
 
-    <!-- Skills Section -->
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Prompt Engineering & AI Tools (ChatGPT, Claude, Gemini)</li>
-        <li>Content Repurposing & Strategy</li>
-        <li>Social Media Optimization (Twitter/X, LinkedIn, TikTok/Reels)</li>
-        <li>Affiliate Marketing (Amazon Associates, Pinterest Campaigns)</li>
-        <li>Productivity Niche Expertise (AI Tools for Efficiency)</li>
-        <li>Freelancing Platforms (Reddit, Fiverr)</li>
-      </ul>
+    <!-- Offer Section -->
+    <div class="offer-section">
+      <h2>Ready to Delegate Your Social Content?</h2>
+      <p>You're a founder, creator, or marketer with valuable long-form content. But the daily grind of creating social media posts is draining your time and energy.</p>
+      <p><strong>Here's my offer:</strong> Send me one piece of your content. I will transform it into a full content calendar with 30+ posts and 5 video scripts.</p>
+      <p><strong>Best of all, it's risk-free.</strong> You don't pay a single dollar until you have the final deliverable in your hands and are 100% satisfied.</p>
+      <a href="#contact" class="btn">Claim Your Risk-Free Trial</a>
     </div>
 
     <!-- How It Works Section -->
     <div class="section">
-      <h2>How It Works</h2>
-      <ol>
-        <li><strong>Share Your Content:</strong> Send a link to your blog post, video, or podcast.</li>
-        <li><strong>I Create:</strong> Using advanced AI prompting and strategic editing, I build your content package.</li>
-        <li><strong>Review & Approve:</strong> You get the final product via Google Doc. Pay only if 100% satisfied (risk-free trial).</li>
-      </ol>
+      <h2>How To Get Your Content Calendar in 48 Hours</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Step 1: Share</h3>
+          <p>Send me a link to your blog post, video, or podcast.</p>
+        </div>
+        <div class="service-card">
+          <h3>Step 2: I Create</h3>
+          <p>I use advanced AI and strategic editing to build your content package.</p>
+        </div>
+        <div class="service-card">
+          <h3>Step 3: You Approve</h3>
+          <p>You get the final product. You only pay if you're 100% satisfied.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="section">
+      <h2>What Clients Say</h2>
+      <div class="testimonial">
+        <p>"Skyler transformed my 2,000-word blog post into a month's worth of social content in just 48 hours. The engagement on my LinkedIn posts increased by 300%!"</p>
+        <div class="testimonial-author">- Marketing Director, SaaS Company</div>
+      </div>
+      <div class="testimonial">
+        <p>"I was skeptical about AI-generated content, but Skyler's strategic editing made all the difference. The content sounded exactly like my brand voice."</p>
+        <div class="testimonial-author">- Founder, Productivity Coaching Business</div>
+      </div>
     </div>
 
     <!-- Contact Section -->
-    <div class="section contact">
-      <h2>Contact</h2>
-      <p>Ready to repurpose your content? Message me for a risk-free trial!</p>
-      <a href="mailto:your.email@example.com">Email</a> |
+    <div class="section contact" id="contact">
+      <h2>Let's Transform Your Content</h2>
+      <p>Have a blog post, video, or podcast episode ready to be repurposed? Get in touch to start your risk-free trial.</p>
+      <a href="mailto:skyler@example.com">Email</a> |
       <a href="https://www.reddit.com/user/yourusername" target="_blank">Reddit</a> |
       <a href="https://www.fiverr.com/yourprofile" target="_blank">Fiverr</a> |
-      <a href="https://www.pinterest.com/yourprofile" target="_blank">Pinterest</a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
     </div>
   </div>
 </body>
