@@ -64,11 +64,15 @@
             <h2>Want My Exact $0-to-$1K Blueprint?</h2>
             <p><strong>Get the free PDF:</strong> “The Pinterest-to-Passive Income Playbook”</p>
             <p style="color:#e74c3c; font-weight:600;">Includes my pin templates, automation workflow, and ClickBank product picker</p>
+
+            <!-- FIXED FORMSPREE FORM -->
             <form action="https://formspree.io/f/xblpnlby" method="POST" style="margin:20px 0;">
                 <input type="email" name="email" placeholder="Enter your email..." required
                        style="padding:14px; width:70%; max-width:300px; border-radius:50px; border:1px solid #ddd; margin-right:10px;">
+                <input type="hidden" name="_form_hash" value="xblpnlby">
                 <button type="submit" class="btn">Send Me the Free Guide</button>
             </form>
+
             <p style="font-size:0.9rem; color:#777; margin-top:15px;">No spam. Unsubscribe anytime. 1,200+ downloads.</p>
         </div>
         <!-- TRUST + PROOF -->
@@ -103,7 +107,6 @@
     </footer>
     <!-- Formspree (FREE Email Capture) -->
     <script>
-        // Optional: Track form submissions
         document.querySelector('form').addEventListener('submit', function() {
             gtag('event', 'lead_magnet_download', { 'event_category': 'engagement' });
         });
