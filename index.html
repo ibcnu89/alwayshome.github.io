@@ -7,12 +7,7 @@
     <meta name="description" content="Discover the exact system I used to go from $0 to $1,000/month in passive income using free tools and automation. No experience needed.">
     <meta name="keywords" content="passive income online, make money online 2025, clickbank affiliate, work from home, automate income">
     <style>
-        :root {
-            --primary: #6C5CE7;
-            --dark: #2D3436;
-            --light: #F8F9FA;
-            --accent: #00B894;
-        }
+        :root { --primary: #6C5CE7; --dark: #2D3436; --light: #F8F9FA; --accent: #00B894; }
         * { margin:0; padding:0; box-sizing:border-box; }
         body { font-family: 'Inter', 'Segoe UI', sans-serif; line-height:1.7; color:#333; background:#fff; }
         .container { max-width:800px; margin:0 auto; padding:20px; }
@@ -24,7 +19,7 @@
         .btn {
             display:inline-block; background:var(--primary); color:white; padding:16px 32px;
             text-decoration:none; border-radius:50px; font-weight:600; font-size:1.1rem;
-            transition:0.3s; box-shadow:0 8px 20px rgba(108,92,231,0.3);
+            transition:0.3s; box-shadow:0 8px 20px rgba(108,92,231,0.3); border: none; cursor: pointer;
         }
         .btn:hover { background:#5a4fcf; transform:translateY(-3px); }
         .checklist { background:white; padding:25px; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.05); margin:30px 0; }
@@ -33,6 +28,9 @@
         .disclosure { font-size:0.85rem; color:#777; text-align:center; margin:40px 0 20px; }
         footer { text-align:center; padding:30px; background:var(--dark); color:white; margin-top:60px; }
         @media (max-width:600px) { h1 { font-size:2rem; } .hero { padding:40px 15px; } }
+        form { margin:20px 0; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; }
+        input[type="email"] { padding:14px; flex: 1; min-width: 200px; border-radius:50px; border:1px solid #ddd; }
+        #status { margin-top: 10px; font-size: 0.9rem; text-align: center; width: 100%; }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -47,7 +45,7 @@
         </section>
         <!-- STORY + VALUE -->
         <section>
-            <h2>Hey, I’m Skyler — This Was Me 90 Days Ago:</h2>
+            <h2>Hey, I'm Skyler — This Was Me 90 Days Ago:</h2>
             <ul class="checklist">
                 <li>Zero budget, zero audience, zero tech skills</li>
                 <li>Tired of "hustle culture" and client work</li>
@@ -55,29 +53,27 @@
             </ul>
             <h2>Now? I Wake Up to This:</h2>
             <p style="text-align:center; font-size:1.3rem; color:var(--primary); font-weight:600;">
-                “$1,247.32 earned this month — 100% automated.”
+                "$1,247.32 earned this month — 100% automated."
             </p>
             <p>No ads. No funnel software. No paid traffic.</p>
         </section>
         <!-- LEAD MAGNET -->
         <div class="lead-box">
             <h2>Want My Exact $0-to-$1K Blueprint?</h2>
-            <p><strong>Get the free PDF:</strong> “The Pinterest-to-Passive Income Playbook”</p>
+            <p><strong>Get the free PDF:</strong> "The Pinterest-to-Passive Income Playbook"</p>
             <p style="color:#e74c3c; font-weight:600;">Includes my pin templates, automation workflow, and ClickBank product picker</p>
 
-            <!-- FIXED FORMSPREE FORM -->
-            <form action="https://formspree.io/f/xblpnlby" method="POST" style="margin:20px 0;">
-                <input type="email" name="email" placeholder="Enter your email..." required
-                       style="padding:14px; width:70%; max-width:300px; border-radius:50px; border:1px solid #ddd; margin-right:10px;">
-                <input type="hidden" name="_form_hash" value="xblpnlby">
+            <form id="leadForm">
+                <input type="email" id="email" placeholder="Enter your email..." required>
                 <button type="submit" class="btn">Send Me the Free Guide</button>
             </form>
+            <div id="status"></div>
 
             <p style="font-size:0.9rem; color:#777; margin-top:15px;">No spam. Unsubscribe anytime. 1,200+ downloads.</p>
         </div>
         <!-- TRUST + PROOF -->
         <section>
-            <h2>Here’s What You’ll Discover Inside:</h2>
+            <h2>Here's What You'll Discover Inside:</h2>
             <ul class="checklist">
                 <li>How to pick <strong>ClickBank products that convert cold traffic</strong></li>
                 <li>My <strong>exact Pinterest pin formula</strong> (copy-paste ready)</li>
@@ -90,7 +86,7 @@
         <div style="text-align:center; margin:50px 0;">
             <p style="font-size:1.1rem; margin-bottom:20px;">
                 <strong>Ready to skip the trial-and-error?</strong><br>
-                I partnered with a <u>proven system</u> that’s generated <strong>over $10M in sales</strong> for beginners.
+                I partnered with a <u>proven system</u> that's generated <strong>over $10M in sales</strong> for beginners.
             </p>
             <a href="https://c1ba42ox-oav0kbb28y2jw2qfi.hop.clickbank.net" target="_blank" class="btn" style="font-size:1.3rem; padding:18px 40px;">
                 YES — Show Me the System Now
@@ -102,13 +98,40 @@
         </div>
     </div>
     <footer>
-        <p>© 2025 Skyler Robinson | <a href="https://ibcnu89.github.io/alwayshome.github.io/" style="color:#aaa;">Home</a> |
-        <a href="mailto:skyler@yourdomain.com" style="color:#aaa;">Contact</a></p>
+        <p>&copy; 2025 Skyler Robinson | <a href="https://ibcnu89.github.io/alwayshome.github.io/" style="color:#aaa;">Home</a> |
+        <a href="mailto:ibcnu89@gmail.com" style="color:#aaa;">Contact</a></p>
     </footer>
-    <!-- Formspree (FREE Email Capture) -->
+
+    <!-- Form JS -->
     <script>
-        document.querySelector('form').addEventListener('submit', function() {
-            gtag('event', 'lead_magnet_download', { 'event_category': 'engagement' });
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value.trim();
+            const status = document.getElementById('status');
+
+            if (!email || !email.includes('@')) {
+                status.innerHTML = '<span style="color:#e74c3c;">Enter a valid email.</span>';
+                return;
+            }
+
+            status.textContent = 'Sending...';
+
+            const formData = new FormData();
+            formData.append('email', email);
+
+            fetch('https://script.google.com/macros/s/AKfycbzu71bE2qHJwj_q96ImLFhqGWw7JarIwChiHYyZsDamT_8ip9isVMBQ9NeP3BA3I7seLA/exec', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(result => {
+                status.innerHTML = '<span style="color:#00B894;">✅ Success! Check your email.</span>';
+                emailInput.value = '';
+            })
+            .catch(error => {
+                status.innerHTML = '<span style="color:#e74c3c;">Error. Try again.</span>';
+            });
         });
     </script>
 </body>
